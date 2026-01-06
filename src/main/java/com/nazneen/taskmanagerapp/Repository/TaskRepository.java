@@ -1,4 +1,7 @@
 package com.nazneen.taskmanagerapp.Repository;
 
-public class TaskRepository {
+import com.nazneen.taskmanagerapp.entity.Task;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface TaskRepository extends JpaRepository<Task, Long> {
 }
